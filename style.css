@@ -1,0 +1,77 @@
+/* Header Styles */
+
+header {
+  
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+
+}
+
+.logo{
+  margin-left: 45%;
+  margin-bottom: 1%;
+}
+
+
+
+/* Card styles */
+
+
+.card {
+    background-color: #fff; /* background color of cards */
+    border: 1px solid #ddd; /* border of 1px round the cards with color */
+    border-radius: 8px; /* adding a border radius round the cards */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* adding a shadow around the cards */
+   
+    flex-direction: column; /* using flex direction column to set these into a column and align the items vertically */
+  }
+
+  #cards-container{
+    display: grid; /* setting the container to grid so that the cards within the container will display in a grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* creates a responsive grid layout with flexible columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;  /* sets the padding to 20px */
+    background-color: #f5f5f5; /* gives background color to container */
+  }
+
+  .card-img {
+
+    border-top-left-radius: 8px; /* adds border to the top left of the image */
+    border-top-right-radius: 8px; /* adds border to the top right of the image */
+    height: 200px; /* gives the images a hight of 200px */
+    object-fit: cover; /* Ensures image covers the area */
+  }
+
+  .empty{ /* like button */
+    padding: 10px 15px; /* setts padding round the button 10px = top and bottom of the button 15px = left and right of the button */
+    background-color: #007BFF; /* sets background color of the button */
+    border: none; /* no border round the button */
+    border-radius: 4px; /* sets border radius of the button */
+    color: #fff; /* sets text color */
+    cursor: pointer; /* pointer when mouse moves over button */ 
+    align-self: flex-start; /* aligning button along the cross axis at the start of the container */
+  }
+  
+  .empty:hover{
+    background-color: #0056b3; /* sets background color of button when its hovered over */
+  }
+
+
+  /* Footer */
+
+  .copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #2F3E46;
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #fff;
+
+}
+
+
